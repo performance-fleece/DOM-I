@@ -81,14 +81,22 @@ pContent[6].textContent = siteContent["contact"]["phone"]
 pContent[7].textContent = siteContent["contact"]["email"]
 pContent[8].textContent = siteContent["footer"]["copyright"]
 
-const navColor = document.querySelectorAll('a');
-navColor.forEach(function(array) {
-  array.style.color = 'green';
-})
-console.log(navColor);
+
+
 document.querySelector('nav').id = "navId";
 const appLink = document.createElement('a');
 const appText = document.createTextNode("Last");
 appLink.setAttribute('href', '#');
 appLink.appendChild(appText);
 document.getElementById('navId').appendChild(appLink);
+
+const preLink = document.createElement("a");
+const preText = document.createTextNode("First");
+preLink.setAttribute("href", "#");
+preLink.appendChild(preText);
+document.getElementById("navId").prepend(preLink);
+
+const navColor = document.querySelectorAll('a');
+navColor.forEach(function(array) {
+  array.style.color = 'green';
+})
