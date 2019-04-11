@@ -81,3 +81,8 @@ pContent[6].textContent = siteContent["contact"]["phone"]
 pContent[7].textContent = siteContent["contact"]["email"]
 pContent[8].textContent = siteContent["footer"]["copyright"]
 
+const navColor = document.querySelectorAll('a');
+navColor.forEach(function(array) {
+  array.style.color = 'green';
+})
+console.log(navColor);
