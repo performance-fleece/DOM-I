@@ -86,3 +86,9 @@ navColor.forEach(function(array) {
   array.style.color = 'green';
 })
 console.log(navColor);
+document.querySelector('nav').id = "navId";
+const appLink = document.createElement('a');
+const appText = document.createTextNode("Last");
+appLink.setAttribute('href', '#');
+appLink.appendChild(appText);
+document.getElementById('navId').appendChild(appLink);
